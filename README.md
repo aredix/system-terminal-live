@@ -23,7 +23,3 @@ Ce projet vise à proposer une solution organisée autour de ses différents com
 Ce projet est distribué sous licence **GNU General Public License v3.0 (GPL-3.0)**.
 
 Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
-
-## 🔗 Repository
-
-[github.com/aredix/system-terminal-live](https://github.com/aredix/system-terminal-live)
