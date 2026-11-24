@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>System Terminal Live</title><link rel="stylesheet" href="style.css"></head>
+<body><main id="terminal">
+<header><span><b>●</b> SYSTEM / TERMINAL LIVE</span><span id="status">INITIALISATION</span></header>
+<div class="dashboard"><div class="overview"><section class="identity"><pre class="logo" aria-label="Windows ASCII">
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::
+::::::::::::::::  ::::::::::::::::</pre><div class="specs"><p class="command">user@desktop <span>~</span> $ systemfetch</p><div class="rule">─────────────────────────────────────────────────────</div><dl id="specs"><dt>Système</dt><dd>En attente du collecteur local…</dd></dl><div class="palette"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></section>
+<section class="time"><div><div class="eyebrow">LOCAL TIME</div><div id="clock">00:00<span>:00</span></div><div id="date"></div></div><div class="uptime"><span class="eyebrow">SESSION WINDOWS</span><p id="uptime">—</p><span id="sample">attente de télémétrie</span></div></section>
+<section><p class="command">user@desktop <span>~</span> $ monitor --live</p><div class="metrics"><article><div class="metric-title">01 / CPU <strong id="cpu-value">—</strong></div><div class="bar"><i id="cpu-bar"></i></div><canvas id="cpu-chart" width="480" height="82"></canvas><small>UTILISATION TOTALE</small></article><article><div class="metric-title">02 / GPU <strong id="gpu-value">—</strong></div><div class="bar"><i id="gpu-bar"></i></div><canvas id="gpu-chart" width="480" height="82"></canvas><small id="gpu-extra">TEMP — · POWER —</small></article><article><div class="metric-title">03 / RAM <strong id="ram-value">—</strong></div><div class="bar"><i id="ram-bar"></i></div><canvas id="ram-chart" width="480" height="82"></canvas><small id="ram-extra">MÉMOIRE PHYSIQUE</small></article></div></section>
+<section class="bottom"><div><p class="command">$ volumes</p><div id="disks">En attente…</div></div><div><p class="command">$ network</p><div id="network">En attente…</div><p class="dim">↑ émission &nbsp; ↓ réception</p></div></section>
+</div><aside class="nerd">
+<section><p class="command">$ cpu --threads</p><p class="eyebrow">LOGICAL PROCESSORS / LIVE LOAD</p><div id="threads" class="threads">En attente…</div></section>
+<section><p class="command">$ nvidia-smi --stats</p><dl id="gpu-details"><dt>GPU</dt><dd>En attente…</dd></dl></section>
+<section><p class="command">$ iostat --physical</p><div id="disk-activity">En attente…</div></section>
+<section><p class="command">$ top --sort cpu</p><table><thead><tr><th>PROCESS / PID</th><th>CPU</th><th>RAM</th></tr></thead><tbody id="processes"></tbody></table><p class="dim note">CPU : % du PC · RAM privée résidente</p></section>
+</aside></div><footer><span id="footer">LOCAL TELEMETRY / 5 SEC</span><span>WINDOWS <b>■</b> LIVE SESSION <span class="cursor">▌</span></span></footer>
+</main><script src="render-utils.js"></script><script src="app.js"></script><script src="nerd.js"></script><script src="graphs.js"></script></body></html>

@@ -1,0 +1,45 @@
+{
+  "title": "System Terminal Live — ASCII Monitor",
+  "description": "Terminal ASCII avec horloge, CPU par thread, GPU NVIDIA, RAM, disques et réseau. IMPORTANT : les mesures réelles nécessitent le compagnon Windows séparé, lancé manuellement. Sans compagnon, le fond affiche une horloge et des valeurs indisponibles. Aucun envoi de données sur Internet. Voir la description Workshop pour les instructions.",
+  "type": "web",
+  "file": "index.html",
+  "general": {
+    "properties": {
+      "accent": {
+        "order": 0,
+        "text": "Couleur du terminal",
+        "type": "color",
+        "value": "0.773 0.729 0.341"
+      },
+      "brightness": {
+        "order": 1,
+        "text": "Luminosité (%)",
+        "type": "slider",
+        "value": 90,
+        "min": 30,
+        "max": 100
+      },
+      "scale": {
+        "order": 2,
+        "text": "Taille du terminal (%)",
+        "type": "slider",
+        "value": 100,
+        "min": 60,
+        "max": 115
+      },
+      "smooth": {
+        "order": 3,
+        "text": "Transitions fluides",
+        "type": "bool",
+        "value": true
+      }
+    }
+  },
+  "tags": [
+    "Technology"
+  ],
+  "visibility": "private",
+  "preview": "preview.png",
+  "contentrating": "Everyone",
+  "version": 1
+}
